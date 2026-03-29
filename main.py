@@ -45,7 +45,7 @@ def hash(list):
 # Partie A — Calcul de hashs SHA-256 
 #
 
-# Question 1.1 — Calculez le SHA-256 des chaînes suivantes et complétez le tableau 
+# Question 1.1 — Calcul le SHA-256 des chaînes suivantes et complétez le tableau 
 
 tab=["Bitcoin","bitcoin","Blockchain","blockchain","Abidjan2025"]
 tab_hash= []
@@ -63,7 +63,7 @@ car_diff = compare(tab_hash[0],tab_hash[1])
 print(f"\n\nNombre de caractere different : {car_diff} /64 soit {100*(car_diff/64)}\n")
 
 
-# Question 1.3 — Calculez SHA-256(SHA-256("Bitcoin"))
+# Question 1.3 — Calcul SHA-256(SHA-256("Bitcoin"))
 
 print(f"SHA-256(SHA-256('Bitcoin')) = {double_hash('Bitcoin')}")
 
@@ -87,8 +87,10 @@ for i in range(10):
 
 #       EXERCICE 2
 
+#   Partie A — Construction manuelle 
 
-#Question 2.1 — Soit un bloc Bitcoin contenant 4 transactions. On dispose des données brutes suivantes 
+
+# Question 2.1 — Soit un bloc Bitcoin contenant 4 transactions. On dispose des données brutes suivantes 
 
 tab_trans = [
 'Alice envoie 0.5 BTC à Bob',
@@ -97,11 +99,37 @@ tab_trans = [
 'Dave envoie 0.05 BTC à Alice'
 ]
 
-for i in range(len(tab_trans)):
-    pass
+# a) Calcul des hashs des feuilles H₁, H₂, H₃, H₄ avec SHA-256 appliqué sur les données brutes de chaque transaction
 
-print(f"")
-print(f"")
+tab_trans_hash = hash(tab_trans)
+
+print("\n\n")
+for i in range(len(tab_trans)):
+    print(f"H{i+1} = {tab_trans[i]} = {tab_trans_hash[i]}")
+
+# b) Calcul des hashs des nœuds intermédiaires N₁ et N₂
+print("\n\n")
+def hash_noeud_inter(list):
+    H=[]
+    for i in range(0,len(list),2):
+        H.append(hash([list[i]+list[i+1]])[0])
+        print(f"H{i+1}{i+2} = {hash([list[i]+list[i+1]])[0]}")
+    return H
+
+noueds_inter= hash_noeud_inter(tab_trans_hash)
+
+
+# C) Calcul de Merkle Root = SHA-256(H₁₂ ‖ H₃₄).
+print("\n\n")
+def MerkleRoot(list):
+    print(f"Merkle Root = {hash(list[0]+list[1])[0]}")
+
+MerkleRoot(noueds_inter)
+
+
+
+
+# PARTIE B — Immutabilité et preuve d'inclusion
 print(f"")
 
 
