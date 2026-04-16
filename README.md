@@ -1,4 +1,7 @@
 # TP1 Blockchain : Fondamentaux de la Blockchain
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![License](https://img.shields.io/badge/License-Educational-green.svg)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)
 
 Projet éducatif complet pour comprendre les concepts fondamentaux de la blockchain à travers des implémentations pratiques en Python.
 
