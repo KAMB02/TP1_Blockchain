@@ -14,17 +14,17 @@ Ce projet vise à démontrer les mécanismes essentiels qui sous-tendent la tech
 ## 🚀 Fonctionnalités Implémentées
 
 ### Exercice 1 : Calculs SHA-256 et Propriétés
-- ✅ Calcul de hachages SHA-256 pour différentes chaînes de caractères
-- ✅ Analyse de la sensibilité à la casse (Bitcoin vs bitcoin)
-- ✅ Démonstration du double hachage SHA-256(SHA-256(x))
-- ✅ Illustration de l'irréversibilité et de la résistance aux collisions
+- Calcul de hachages SHA-256 pour différentes chaînes de caractères
+- Analyse de la sensibilité à la casse (Bitcoin vs bitcoin)
+- Démonstration du double hachage SHA-256(SHA-256(x))
+- Illustration de l'irréversibilité et de la résistance aux collisions
 
 ### Exercice 2 : Arbres de Merkle et Intégrité
-- ✅ Construction manuelle d'un arbre de Merkle avec 4 transactions
-- ✅ Calcul de la racine de Merkle (Merkle Root)
-- ✅ Démonstration de détection de fraude par modification de transaction
-- ✅ Implémentation de preuve d'inclusion (Merkle Proof)
-- ✅ Gestion des nombres impairs de transactions
+- Construction manuelle d'un arbre de Merkle avec 4 transactions
+- Calcul de la racine de Merkle (Merkle Root)
+- Démonstration de détection de fraude par modification de transaction
+- Implémentation de preuve d'inclusion (Merkle Proof)
+- Gestion des nombres impairs de transactions
 
 ## 📋 Prérequis
 
