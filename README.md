@@ -94,7 +94,7 @@ Implémentation d'une Merkle Proof efficace permettant de vérifier l'existence 
 ```
 Bitcoin = 6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b
 bitcoin = b2c3ae1b8c1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1
-Nombre de caractères différents : 43/64 soit 67.19%
+Nombre de caractères différents : 62/64 soit 96.88%
 ```
 
 ### Arbre de Merkle
