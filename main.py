@@ -5,7 +5,6 @@ from hashlib import *
 # Mes fonctions
 #-----------------------------
 
-
 def compare(mot1,mot2):
     n=len(mot1)
     nbr=0
@@ -238,11 +237,16 @@ print(f"H33 = SHA-256(H3 ‖ H3) = {H33_3tx}")
 # Merkle Root pour 3 transactions
 root_3tx = hash([H12_3tx + H33_3tx])[0]
 print(f"\nMerkle Root (3 tx) = SHA-256(H12 ‖ H33) = {root_3tx}")
-
-print("""
-
-""")
-
+print(f"\nStructure de l'arbre avec 3 transactions :")
+print(f"        [Merkle Root]")
+print(f"           {root_3tx[:20]}...")
+print(f"              /      \\")
+print(f"         [H₁₂]      [H₃₃]")
+print(f"      {H12_3tx[:20]}...  {H33_3tx[:20]}...")
+print(f"         /    \\      /      \\")
+print(f"      [H₁]  [H₂]  [H₃]  [H₃]")
+print(f"         |     |     |     |")
+print(f"       (Tx₁) (Tx₂) (Tx₃) (dup)")
 print(f"\n► Règle Bitcoin : La dernière feuille est dupliquée pour former une paire")
 
 
