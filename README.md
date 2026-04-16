@@ -3,6 +3,18 @@
 ![License](https://img.shields.io/badge/License-Educational-green.svg)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen.svg)
 
+## 📋 Sommaire
+- [🎯 Objectifs Pédagogiques](#-objectifs-pédagogiques)
+- [🚀 Fonctionnalités Implémentées](#-fonctionnalités-implémentées)
+- [📋 Prérequis](#-prérequis)
+- [🛠️ Installation et Utilisation](#️-installation-et-utilisation)
+- [📚 Contenu Détaillé](#-contenu-détaillé)
+- [🧮 Exemples de Résultats](#-exemples-de-résultats)
+- [🔍 Concepts Clés Démontrés](#-concepts-clés-démontrés)
+- [📖 Applications Réelles](#-applications-réelles)
+- [🤝 Contribuer](#-contribuer)
+- [📄 Licence](#-licence)
+
 Projet éducatif complet pour comprendre les concepts fondamentaux de la blockchain à travers des implémentations pratiques en Python.
 
 ## 🎯 Objectifs Pédagogiques
